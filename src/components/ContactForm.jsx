@@ -18,12 +18,17 @@ const ContactForm = () => {
     setStatus('enviando');
 
     try {
-      const response = await fetch('uriroig-backend-production.up.railway.app/contact', {
+      const response = await fetch('https://uriroig-backend-production.up.railway.app/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          service: formData.service,
+          message: formData.message
+        }),
       });
 
       if (response.ok) {
