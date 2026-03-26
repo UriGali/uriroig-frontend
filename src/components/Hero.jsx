@@ -15,14 +15,14 @@ const Hero = () => {
         className="text-center z-10"
       >
         <h2 className="text-blue-500 font-mono tracking-widest uppercase text-[10px] mb-4 italic">
-          Desarrollo Web & Automatización n8n
+          Agencia de Desarrollo Web & Automatización n8n
         </h2>
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">
           Uri <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 font-light italic">Roig</span>
         </h1>
         <p className="max-w-2xl mx-auto text-gray-400 text-lg md:text-xl leading-relaxed mb-10">
-          Transformo ideas en experiencias digitales <span className="text-white italic font-medium">impecables</span>.
-          Especializado en arquitecturas modernas y optimización de negocios.
+          Transformamos ideas en experiencias digitales <span className="text-white italic font-medium">impecables</span>.
+          En nuestra agencia nos especializamos en arquitecturas modernas y optimización de procesos de negocio.
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
