@@ -71,7 +71,7 @@ const ContactForm = () => {
               <h3 className="text-blue-500 font-mono text-[9px] uppercase tracking-[0.4em] mb-10 font-bold">Canales Directos</h3>
 
               <div className="space-y-8">
-                <a href="mailto:hola@uriroig.dev" className="flex items-center gap-5 group">
+                <a href="mailto:urigali25@gmail.com" className="flex items-center gap-5 group">
                   <div className="p-3 bg-blue-500/5 rounded-2xl group-hover:bg-blue-500/20 transition-all border border-white/5">
                     <Mail className="w-5 h-5 text-blue-500" />
                   </div>
