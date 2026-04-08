@@ -78,7 +78,7 @@ function App() {
         <footer className="py-20 bg-black border-t border-white/5">
           <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-cormorant uppercase tracking-[0.2em] text-gray-600">
             <div className="text-left">
-              <p className="text-xl font-bold tracking-tighter text-white">URI<span className="text-blue-500">& ROIG</span></p>
+              <p className="text-xl font-bold tracking-tighter text-white">URI<span className="text-blue-500">ROIG</span></p>
               <p className="mt-2 tracking-widest text-[9px]">Soluciones digitales de alto rendimiento.</p>
             </div>
 
