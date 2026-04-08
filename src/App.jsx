@@ -53,7 +53,7 @@ function App() {
         {/* NAVBAR */}
         <nav className="fixed w-full z-50 top-0 py-5 px-10 border-b border-white/10 bg-black/80 backdrop-blur-md flex justify-between items-center">
           <Link to="/" className="text-2xl font-cinzel font-bold tracking-tighter hover:opacity-80 transition-opacity">
-            AURUM <span className="text-gold-500 italic">& HERITAGE</span>
+            URI<span className="text-blue-500 italic">ROIG</span>
           </Link>
 
           <div className="flex items-center gap-8 text-[10px] font-cormorant uppercase tracking-[0.2em]">
