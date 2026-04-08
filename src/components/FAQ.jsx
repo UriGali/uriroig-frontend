@@ -23,7 +23,7 @@ const FAQ = () => {
     return (
         <section className="py-32 bg-black px-6">
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl font-bold text-white mb-12 italic text-center">Preguntas Frecuentes</h2>
+                <h2 className="text-3xl font-cinzel font-bold text-white mb-12 italic text-center">Preguntas Frecuentes</h2>
                 <div className="space-y-4">
                     {questions.map((item, i) => (
                         <div key={i} className="border border-white/10 rounded-2xl overflow-hidden">
@@ -32,7 +32,7 @@ const FAQ = () => {
                                 className="w-full p-6 text-left flex justify-between items-center bg-white/[0.02] hover:bg-white/[0.04] transition-colors"
                             >
                                 <span className="text-white font-medium">{item.q}</span>
-                                {active === i ? <Minus className="w-4 h-4 text-blue-500" /> : <Plus className="w-4 h-4 text-gray-500" />}
+                                {active === i ? <Minus className="w-4 h-4 text-gold-500" /> : <Plus className="w-4 h-4 text-gray-500" />}
                             </button>
                             <AnimatePresence>
                                 {active === i && (

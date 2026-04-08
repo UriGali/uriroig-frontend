@@ -3,13 +3,13 @@ import React from 'react';
 const Legal = () => {
     return (
         <section className="py-32 bg-black text-gray-400 px-6 max-w-4xl mx-auto leading-relaxed">
-            <h1 className="text-3xl font-bold text-white mb-8">Aviso Legal y Política de Privacidad</h1>
+            <h1 className="text-3xl font-cinzel font-bold text-white mb-8">Aviso Legal y Política de Privacidad</h1>
 
             <div className="space-y-6 text-sm">
                 <p>
                     En cumplimiento de la Ley 34/2002 (LSSI-CE), se informa que el titular de esta web es:
                     <br /><br />
-                    <strong className="text-white">Responsable:</strong> Uri Roig<br />
+                    <strong className="text-white">Responsable:</strong> Aurum & Heritage<br />
                     <strong className="text-white">NIF/DNI:</strong> [TU DNI AQUÍ]<br />
                     <strong className="text-white">Contacto:</strong> hola@uriroig.dev<br />
                     <strong className="text-white">Ubicación:</strong> Matadepera, Barcelona.

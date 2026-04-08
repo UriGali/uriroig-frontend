@@ -48,19 +48,19 @@ function App() {
         }}
       />
 
-      <div className="min-h-screen bg-black text-white selection:bg-blue-500/30 font-sans">
+      <div className="min-h-screen bg-black text-white selection:bg-gold-500/30 font-sans">
 
         {/* NAVBAR */}
         <nav className="fixed w-full z-50 top-0 py-5 px-10 border-b border-white/10 bg-black/80 backdrop-blur-md flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
-            URI<span className="text-blue-500 italic">ROIG</span>
+          <Link to="/" className="text-2xl font-cinzel font-bold tracking-tighter hover:opacity-80 transition-opacity">
+            AURUM <span className="text-gold-500 italic">& HERITAGE</span>
           </Link>
 
-          <div className="flex items-center gap-8 text-[10px] font-mono uppercase tracking-[0.2em]">
+          <div className="flex items-center gap-8 text-[10px] font-cormorant uppercase tracking-[0.2em]">
             <Link to="/" className="hidden md:block text-gray-500 hover:text-white transition-colors">Inicio</Link>
             <Link
               to="/contacto"
-              className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95"
+              className="bg-gold-600 text-white px-8 py-3 rounded-full font-bold hover:bg-gold-500 transition-all shadow-lg shadow-gold-600/20 active:scale-95"
             >
               Pedir Presupuesto
             </Link>
@@ -76,9 +76,9 @@ function App() {
 
         {/* FOOTER */}
         <footer className="py-20 bg-black border-t border-white/5">
-          <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-mono uppercase tracking-[0.2em] text-gray-600">
+          <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-cormorant uppercase tracking-[0.2em] text-gray-600">
             <div className="text-left">
-              <p className="text-xl font-bold tracking-tighter text-white">URI<span className="text-blue-500">ROIG</span></p>
+              <p className="text-xl font-bold tracking-tighter text-white">AURUM <span className="text-gold-500">& HERITAGE</span></p>
               <p className="mt-2 tracking-widest text-[9px]">Soluciones digitales de alto rendimiento.</p>
             </div>
 
