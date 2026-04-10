@@ -57,38 +57,34 @@ const ContactForm = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 italic">Hablemos</h2>
-          <p className="text-gray-500 italic max-w-lg mx-auto">Sistemas inteligentes para empresas que no se detienen.</p>
+          <p className="text-gray-500 italic max-w-lg mx-auto uppercase text-[10px] tracking-widest font-mono">Sistemas inteligentes para empresas que no se detienen.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-stretch">
 
-          {/* COLUMNA IZQUIERDA: AGENTE IA (2 COLUMNAS) */}
+          {/* COLUMNA IZQUIERDA: AGENTE IA */}
           <div className="lg:col-span-2 flex flex-col">
             <div className="bg-white/[0.02] border border-white/5 rounded-[2.5rem] backdrop-blur-3xl relative overflow-hidden h-[650px] flex flex-col shadow-2xl border-blue-500/20">
-
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
-              {/* Header del Agente */}
-              <div className="p-6 border-b border-white/5 flex justify-between items-center bg-black/60 z-10 shrink-0">
+              <div className="p-6 border-b border-white/5 flex justify-between items-center bg-black/60 z-10 shrink-0 font-mono">
                 <div className="flex items-center gap-3">
                   <div className="relative">
                     <div className="w-2 h-2 bg-blue-500 rounded-full animate-ping absolute opacity-75" />
                     <div className="w-2 h-2 bg-blue-500 rounded-full relative" />
                   </div>
                   <div>
-                    <h3 className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Infraestructura IA</h3>
-                    <p className="text-[9px] text-gray-500 italic font-mono uppercase">Node_Active: 24/7</p>
+                    <h3 className="text-blue-500 text-[10px] uppercase tracking-[0.3em] font-bold">Infraestructura IA</h3>
+                    <p className="text-[9px] text-gray-500 italic uppercase">Node_Active: 24/7</p>
                   </div>
                 </div>
                 <Cpu className="w-4 h-4 text-gray-700" />
               </div>
 
-              {/* Contenedor del Bot con SCROLL FORZADO */}
               <div className="flex-grow w-full h-full overflow-hidden relative z-10">
                 <typebot-standard style={{ width: "100%", height: "100%" }}></typebot-standard>
               </div>
 
-              {/* Footer decorativo */}
               <div className="p-4 bg-black/40 border-t border-white/5 shrink-0">
                 <p className="text-[8px] text-center text-gray-600 font-mono tracking-widest uppercase">
                   Sistemas optimizados. Sin fricción manual.
@@ -97,49 +93,106 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* COLUMNA DERECHA: FORMULARIO (3 COLUMNAS) */}
+          {/* COLUMNA DERECHA: FORMULARIO PREMIUM */}
           <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="bg-white/[0.01] border border-white/5 p-8 md:p-12 rounded-[3rem] shadow-2xl relative h-full flex flex-col justify-between">
+            <form onSubmit={handleSubmit} className="bg-white/[0.01] border border-white/5 p-8 md:p-12 rounded-[3rem] shadow-2xl relative h-full flex flex-col justify-between backdrop-blur-md">
               <div className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-2">
-                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono">Entidad / Nombre</label>
-                    <input type="text" value={formData.name} placeholder="Su nombre" className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 transition-all font-mono text-sm" onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
+                  {/* NOMBRE */}
+                  <div className="group space-y-2">
+                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono group-focus-within:text-blue-500 transition-colors">Entidad / Nombre</label>
+                    <input
+                      type="text"
+                      value={formData.name}
+                      placeholder="Su nombre"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/5 transition-all font-mono text-sm placeholder:text-gray-800"
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      required
+                    />
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono">Canal de Contacto</label>
-                    <input type="email" value={formData.email} placeholder="empresa@ejemplo.com" className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 transition-all font-mono text-sm" onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />
+                  {/* EMAIL */}
+                  <div className="group space-y-2">
+                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono group-focus-within:text-blue-500 transition-colors">Canal de Contacto</label>
+                    <input
+                      type="email"
+                      value={formData.email}
+                      placeholder="empresa@ejemplo.com"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/5 transition-all font-mono text-sm placeholder:text-gray-800"
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      required
+                    />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-2">
-                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono">Módulo Requerido</label>
-                    <select value={formData.service} className="w-full bg-neutral-900 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 appearance-none cursor-pointer font-mono text-sm" onChange={(e) => setFormData({ ...formData, service: e.target.value })}>
-                      <option value="Identidad Digital Corporativa">Identidad Digital Corporativa</option>
-                      <option value="E-commerce de Alto Rendimiento">E-commerce de Alto Rendimiento</option>
-                      <option value="Infraestructura IA & Automatización">Infraestructura IA & Automatización</option>
-                    </select>
+                  {/* SERVICIO */}
+                  <div className="group space-y-2">
+                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono group-focus-within:text-blue-500 transition-colors">Módulo Requerido</label>
+                    <div className="relative">
+                      <select
+                        value={formData.service}
+                        className="w-full bg-neutral-900 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 appearance-none cursor-pointer font-mono text-sm"
+                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                      >
+                        <option value="Identidad Digital Corporativa">Identidad Digital Corporativa</option>
+                        <option value="E-commerce de Alto Rendimiento">E-commerce de Alto Rendimiento</option>
+                        <option value="Infraestructura IA & Automatización">Infraestructura IA & Automatización</option>
+                      </select>
+                      <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-600 text-xs">▼</div>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono">Inversión Estimada</label>
-                    <select value={formData.budget} className="w-full bg-neutral-900 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 appearance-none cursor-pointer font-mono text-sm" onChange={(e) => setFormData({ ...formData, budget: e.target.value })}>
-                      <option value="800€ - 1.500€">800€ - 1.500€</option>
-                      <option value="1.500€ - 3.000€">1.500€ - 3.000€</option>
-                      <option value="Proyectos Custom (+3.000€)">Proyectos Custom (+3.000€)</option>
-                    </select>
+                  {/* PRESUPUESTO */}
+                  <div className="group space-y-2">
+                    <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono group-focus-within:text-blue-500 transition-colors">Inversión Estimada</label>
+                    <div className="relative">
+                      <select
+                        value={formData.budget}
+                        className="w-full bg-neutral-900 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 appearance-none cursor-pointer font-mono text-sm"
+                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                      >
+                        <option value="800€ - 1.500€">800€ - 1.500€</option>
+                        <option value="1.500€ - 3.000€">1.500€ - 3.000€</option>
+                        <option value="Proyectos Custom (+3.000€)">Proyectos Custom (+3.000€)</option>
+                      </select>
+                      <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-600 text-xs">▼</div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono">Descripción del Desafío</label>
-                  <textarea rows="4" value={formData.message} placeholder="Defina el problema que desea resolver..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 transition-all resize-none font-mono text-sm" onChange={(e) => setFormData({ ...formData, message: e.target.value })} required></textarea>
+                {/* MENSAJE */}
+                <div className="group space-y-2">
+                  <label className="text-[10px] text-gray-600 uppercase tracking-widest ml-1 font-bold font-mono group-focus-within:text-blue-500 transition-colors">Descripción del Desafío</label>
+                  <textarea
+                    rows="4"
+                    value={formData.message}
+                    placeholder="Defina el problema que desea resolver..."
+                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/5 transition-all resize-none font-mono text-sm placeholder:text-gray-800"
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    required
+                  ></textarea>
                 </div>
               </div>
 
-              <button type="submit" disabled={status === 'enviando'} className="w-full mt-8 bg-blue-600 hover:bg-blue-500 disabled:bg-blue-900 text-white font-bold py-5 rounded-2xl transition-all flex items-center justify-center gap-3 group shadow-2xl shadow-blue-600/20 active:scale-[0.98] font-mono uppercase tracking-widest text-xs">
-                {status === 'enviando' ? 'EJECUTANDO PROTOCOLO...' : 'ENVIAR SOLICITUD'}
-                <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              {/* BOTÓN CON EFECTO DEGRADADO */}
+              <button
+                type="submit"
+                disabled={status === 'enviando'}
+                className="w-full mt-10 relative group/btn overflow-hidden rounded-2xl shadow-2xl shadow-blue-600/10 active:scale-[0.98] transition-all"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-500 transition-all duration-300 group-hover/btn:scale-110" />
+                <div className="relative py-5 flex items-center justify-center gap-3 text-white font-bold font-mono uppercase tracking-[0.2em] text-[10px]">
+                  {status === 'enviando' ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                      EJECUTANDO PROTOCOLO...
+                    </>
+                  ) : (
+                    <>
+                      ENVIAR SOLICITUD
+                      <Send className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                    </>
+                  )}
+                </div>
               </button>
             </form>
           </div>
