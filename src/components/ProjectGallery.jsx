@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'MediPulse AI | Health SaaS',
     category: 'Infraestructura IA & n8n',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173bdb999ef?q=80&w=800&auto=format&fit=crop',
+    image: '/mediplus.png',
     desc: 'Sistema inteligente de gestión médica con automatización de procesos mediante IA y arquitecturas conectadas.',
     link: 'https://medipulse-ai-saas.vercel.app'
   },
