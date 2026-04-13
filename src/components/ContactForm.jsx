@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Send, CheckCircle2, Cpu, Globe, Zap, Rocket, Layers } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Importante añadir esto para el enlace
 import toast from 'react-hot-toast';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    // IMPORTANTE: Este nombre debe coincidir EXACTO con lo que espera tu n8n
     service: 'Desarrollo de Ecosistemas Web de Élite',
     message: ''
   });
@@ -21,7 +21,6 @@ const ContactForm = () => {
     document.body.append(typebotInitScript);
   }, []);
 
-  // Lista de servicios con el ID largo para n8n y el título corto para el diseño
   const services = [
     { id: 'Desarrollo de Ecosistemas Web de Élite', title: 'Web de Élite', desc: 'Impacto digital pro', icon: <Globe className="w-5 h-5" /> },
     { id: 'Ingeniería de Automatizaciones con IA', title: 'IA & Automations', desc: 'Optimiza y ahorra', icon: <Zap className="w-5 h-5" /> },
@@ -34,7 +33,6 @@ const ContactForm = () => {
     setStatus('enviando');
 
     try {
-      // Usamos tu URL de producción que ya funcionaba
       const response = await fetch('https://uriroig-backend-production.up.railway.app/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -101,7 +99,6 @@ const ContactForm = () => {
                   />
                 </div>
 
-                {/* CARDS SELECCIÓN */}
                 <div className="space-y-3">
                   <p className="text-[10px] text-gray-600 uppercase tracking-widest font-bold ml-1">Área de interés</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -134,14 +131,22 @@ const ContactForm = () => {
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                disabled={status === 'enviando'}
-                className="w-full mt-8 bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 rounded-2xl transition-all uppercase tracking-widest text-xs flex items-center justify-center gap-3"
-              >
-                {status === 'enviando' ? 'Sincronizando...' : 'Enviar Solicitud'}
-                <Send className="w-4 h-4" />
-              </button>
+              <div>
+                <button
+                  type="submit"
+                  disabled={status === 'enviando'}
+                  className="w-full mt-8 bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 rounded-2xl transition-all uppercase tracking-widest text-xs flex items-center justify-center gap-3"
+                >
+                  {status === 'enviando' ? 'Sincronizando...' : 'Enviar Solicitud'}
+                  <Send className="w-4 h-4" />
+                </button>
+
+                {/* AVISO LEGAL AÑADIDO AQUÍ */}
+                <p className="mt-4 text-[9px] text-gray-600 text-center leading-relaxed">
+                  Al enviar este formulario, confirmas que has leído y aceptas nuestra <Link to="/aviso-legal" className="text-blue-500/80 underline hover:text-blue-400 transition-colors">Política de Privacidad</Link>.
+                </p>
+              </div>
+
             </form>
           </div>
         </div>
