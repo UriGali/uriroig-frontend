@@ -43,7 +43,7 @@ const ContactForm = () => {
 
       if (response.ok) {
         setStatus('success');
-        toast.success(`¡Recibido, ${formData.name}! Sincronizando con n8n...`, {
+        toast.success(`¡Sistemas activados, ${formData.name}! Revisa tu bandeja de entrada; te hemos enviado el protocolo de análisis.`, {
           icon: <CheckCircle2 className="text-blue-500 w-6 h-6" />,
           style: { border: '1px solid #3b82f6', padding: '20px', color: '#fff', background: '#0a0a0a' },
         });
@@ -110,8 +110,8 @@ const ContactForm = () => {
                         key={s.id}
                         onClick={() => setFormData({ ...formData, service: s.id })}
                         className={`cursor-pointer p-4 rounded-2xl border transition-all flex items-center gap-4 ${formData.service === s.id
-                            ? 'border-blue-500 bg-blue-500/10'
-                            : 'border-white/5 bg-white/[0.02] hover:border-white/10'
+                          ? 'border-blue-500 bg-blue-500/10'
+                          : 'border-white/5 bg-white/[0.02] hover:border-white/10'
                           }`}
                       >
                         <div className={formData.service === s.id ? 'text-blue-500' : 'text-gray-600'}>{s.icon}</div>

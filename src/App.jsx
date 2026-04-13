@@ -11,6 +11,7 @@ import TechStack from './components/TechStack';
 import FAQ from './components/FAQ';
 import Legal from './components/Legal';
 import ScrollToTop from './components/ScrollToTop';
+import CookieBanner from './components/CookieBanner'; // <--- IMPORTACIÓN AÑADIDA
 
 const Home = () => (
   <>
@@ -28,7 +29,7 @@ function App() {
     <Router>
       <ScrollToTop />
 
-      {/* TOASTER ACTUALIZADO: Arriba a la derecha y más visible */}
+      {/* TOASTER ACTUALIZADO */}
       <Toaster
         position="top-right"
         toastOptions={{
@@ -60,7 +61,7 @@ function App() {
             <Link to="/" className="hidden md:block text-gray-500 hover:text-white transition-colors">Inicio</Link>
             <Link
               to="/contacto"
-              className="bg-gold-600 text-white px-8 py-3 rounded-full font-bold hover:bg-gold-500 transition-all shadow-lg shadow-gold-600/20 active:scale-95"
+              className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95"
             >
               Pedir Presupuesto
             </Link>
@@ -94,6 +95,8 @@ function App() {
           </div>
         </footer>
       </div>
+
+      <CookieBanner /> {/* <--- BANNER INTEGRADO AQUÍ */}
     </Router>
   );
 }
