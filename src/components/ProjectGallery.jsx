@@ -5,30 +5,30 @@ import { ExternalLink } from 'lucide-react';
 const projects = [
   {
     title: 'Heretat Vallès | Real Estate VIP',
-    category: 'Identidad Digital Corporativa',
+    category: 'Desarrollo Web & Lead Gen',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',
-    desc: 'Plataforma inmobiliaria de lujo con estética minimalista y enfoque en conversión de leads de alto valor.',
+    desc: 'Diseño de plataforma inmobiliaria de lujo. Implementación de embudos de captación para leads de alto valor y estética minimalista de alto rendimiento.',
     link: 'https://heretat-valles-dsb4qvbm6-urigalis-projects.vercel.app'
   },
   {
     title: 'Chronos | Luxury Store',
-    category: 'E-commerce de Alto Rendimiento',
+    category: 'E-commerce & UX Design',
     image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
-    desc: 'Tienda online boutique para productos premium, optimizada para velocidad de carga y experiencia de usuario fluida.',
+    desc: 'Tienda online boutique optimizada para máxima velocidad de carga. Estructura enfocada a la conversión y experiencia de usuario premium en retail.',
     link: 'https://chronos-luxury-store.vercel.app'
   },
   {
     title: 'MediPulse AI | Health SaaS',
-    category: 'Infraestructura IA & n8n',
+    category: 'Automatización IA & n8n',
     image: '/mediplus.png',
-    desc: 'Sistema inteligente de gestión médica con automatización de procesos mediante IA y arquitecturas conectadas.',
+    desc: 'Infraestructura inteligente con IA para gestión médica. Automatización de flujos de trabajo con n8n para optimizar procesos operativos críticos.',
     link: 'https://medipulse-ai-saas.vercel.app'
   },
   {
     title: 'Party Animal | E-commerce Brand',
-    category: 'Brand Experience & Web',
+    category: 'Brand Experience & Direct Sales',
     image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop',
-    desc: 'Lanzamiento de marca con enfoque visual disruptivo y sistemas de venta directa optimizados.',
+    desc: 'Lanzamiento de marca disruptiva con sistemas de venta directa. Estrategia digital enfocada en escalabilidad y alto impacto visual para marcas modernas.',
     link: 'https://party-animal-store.vercel.app'
   }
 ];
