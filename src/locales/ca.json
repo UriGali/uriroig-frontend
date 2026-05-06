@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Inici",
+    "budget": "Demanar Pressupost"
+  },
+  "footer": {
+    "tagline": "Solucions digitals d'alt rendiment.",
+    "home": "Inici",
+    "contact": "Contacte",
+    "legal": "Legal",
+    "location": "MATADEPERA, BCN."
+  },
+  "hero": {
+    "subtitle": "Desenvolupament Web & Automatització Intel·ligent",
+    "desc_pre": "Transformem idees en experiències digitals ",
+    "highlight": "impecables",
+    "desc_post": ". Especialista en arquitectures modernes i optimització de processos amb IA.",
+    "cta_budget": "Demanar Pressupost",
+    "cta_projects": "Veure Projectes"
+  },
+  "techstack": {
+    "heading": "Tecnologies d'Avantguarda"
+  },
+  "services": {
+    "heading": "Serveis High-End",
+    "tagline": "Solucions tecnològiques dissenyades per a negocis que busquen el següent nivell.",
+    "web_title": "Creació de Webs d'Èlit",
+    "web_desc": "Disseny minimalista i funcional. Landing pages i plataformes escalables construïdes amb React i FastAPI per a una velocitat màxima i conversió total.",
+    "ai_title": "Automatització amb IA",
+    "ai_desc": "Optimitzem el teu temps integrant intel·ligència artificial: des d'agents d'atenció al client 24/7 fins a processos que s'executen sols.",
+    "growth_title": "Estratègia de Growth & Ads",
+    "growth_desc": "No només creem la teva web, la fem rendible. Campanyes a Facebook Ads i Instagram dissenyades per captar leads i escalar la teva facturació."
+  },
+  "projects": {
+    "heading": "Portafoli de Solucions",
+    "tagline": "Sistemes reals desplegats en producció.",
+    "view_live": "Veure Projecte Live",
+    "realestate_category": "Desenvolupament Web & Lead Gen",
+    "realestate_desc": "Disseny de plataforma immobiliària de luxe. Implementació d'embuts de captació per a leads d'alt valor i estètica minimalista d'alt rendiment.",
+    "chronos_category": "E-commerce & UX Design",
+    "chronos_desc": "Botiga online boutique optimitzada per a màxima velocitat de càrrega. Estructura enfocada a la conversió i experiència d'usuari premium al retail.",
+    "medipulse_category": "Automatització IA & n8n",
+    "medipulse_desc": "Infraestructura intel·ligent amb IA per a gestió mèdica. Automatització de fluxos de treball amb n8n per optimitzar processos operatius crítics.",
+    "party_category": "Brand Experience & Direct Sales",
+    "party_desc": "Llançament de marca disruptiva amb sistemes de venda directa. Estratègia digital enfocada en escalabilitat i alt impacte visual per a marques modernes."
+  },
+  "methodology": {
+    "heading": "La Meva Metodologia",
+    "tagline": "Un procés transparent dissenyat per obtenir resultats excepcionals en cada projecte.",
+    "step1_title": "1. Consultoria",
+    "step1_desc": "Parlem sobre els teus objectius, el públic ideal i les funcionalitats necessàries per al teu negoci.",
+    "step2_title": "2. Desenvolupament",
+    "step2_desc": "Construeixo la solució utilitzant l'stack més modern (React, FastAPI, n8n) enfocat en la velocitat.",
+    "step3_title": "3. Revisió",
+    "step3_desc": "Testem cada detall junts per assegurar que el resultat supera les teves expectatives inicials.",
+    "step4_title": "4. Lliurament",
+    "step4_desc": "Despleguem el projecte i t'acompanyo en el llançament perquè tot funcioni a la perfecció.",
+    "cta_heading": "Parlem del teu projecte?",
+    "cta_desc": "Cada solució és única. Analitzem les teves necessitats per oferir-te una proposta personalitzada i sense compromís.",
+    "cta_button": "Sol·licitar proposta personalitzada"
+  },
+  "contact": {
+    "ai_label": "Consultoria IA",
+    "name_placeholder": "El teu nom",
+    "email_placeholder": "El teu email",
+    "interest_label": "Àrea d'interès",
+    "message_placeholder": "El teu missatge...",
+    "service_web_title": "Web d'Èlit",
+    "service_web_desc": "Impacte digital pro",
+    "service_ai_title": "IA & Automations",
+    "service_ai_desc": "Optimitza i estalvia",
+    "service_growth_title": "Growth & Ads",
+    "service_growth_desc": "Escala les teves vendes",
+    "service_full_title": "Full Business",
+    "service_full_desc": "Estratègia 360°",
+    "sending": "Sincronitzant...",
+    "submit": "Enviar Sol·licitud",
+    "privacy_text": "En enviar aquest formulari, confirmes que has llegit i acceptes la nostra",
+    "privacy_link": "Política de Privacitat",
+    "success": "Sistemes activats, {{name}}! Revisa la teva bústia d'entrada; t'hem enviat el protocol d'anàlisi.",
+    "error": "Error de connexió. Verifica el servidor."
+  },
+  "faq": {
+    "heading": "Preguntes Freqüents",
+    "q1": "Quant de temps tarda a estar llesta una web?",
+    "a1": "Normalment entre 2 i 4 setmanes, depenent de la complexitat i de si ja tens els textos i materials llests.",
+    "q2": "Per què uses n8n per a les automatitzacions?",
+    "a2": "Perquè permet connectar centenars d'aplicacions de forma visual i ràpida, la qual cosa redueix els costos de manteniment per a tu.",
+    "q3": "He de pagar manteniment mensual?",
+    "a3": "No és obligatori. Un cop lliuro el projecte és teu al 100%, però ofereixo plans opcionals perquè no hagis de preocupar-te d'actualitzacions."
+  },
+  "cookies": {
+    "text": "Infraestructura tècnica: Utilitzem cookies per al funcionament de l'Agent IA i la seguretat del sistema.",
+    "accept": "Acceptar Protocol"
+  },
+  "legal": {
+    "heading": "Informació Legal",
+    "section1_title": "01. Titularitat del Lloc",
+    "section1_body": "En compliment de la Llei 34/2002 (LSSI-CE), s'informa que el responsable d'aquest lloc és:",
+    "identity_label": "Identitat",
+    "identity_value": "URI ROIG (Agència d'Ecosistemes Digitals)",
+    "dni_label": "DNI/NIF",
+    "location_label": "Ubicació",
+    "location_value": "Matadepera, Barcelona.",
+    "section2_title": "02. Política de Privacitat (RGPD)",
+    "section2_intro": "Les dades recollides mitjançant el formulari de contacte i l'agent IA (Typebot) es tracten sota la base legal del consentiment de l'interessat.",
+    "purpose_label": "Finalitat",
+    "purpose_value": "Gestió de consultes, elaboració de pressupostos d'automatització i comunicació professional.",
+    "storage_label": "Emmagatzematge",
+    "storage_value": "Les dades es processen a través de n8n i s'emmagatzemen en servidors segurs (Railway) i bases de dades privades.",
+    "rights_label": "Drets",
+    "rights_value": "Pots sol·licitar l'accés, rectificació o eliminació de les teves dades escrivint a uriroigg@gmail.com.",
+    "section3_title": "03. Política de Cookies",
+    "section3_body": "Aquest lloc web utilitza cookies tècniques necessàries per a l'execució de l'Agent IA i el correcte funcionament del formulari. En navegar per aquesta web, acceptes l'ús d'aquestes eines d'infraestructura tècnica. No utilitzem cookies de rastreig publicitari de tercers.",
+    "section4_title": "04. Propietat Intel·lectual",
+    "section4_body": "Tot el contingut, disseny i algorismes d'automatització mostrats són propietat d'URI ROIG. Queda prohibida la seva reproducció total o parcial sense autorització expressa."
+  }
+}

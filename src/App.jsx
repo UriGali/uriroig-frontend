@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
+import { useTranslation } from 'react-i18next';
 
 import Hero from './components/Hero';
 import ServiceCards from './components/ServiceCards';
@@ -11,7 +12,8 @@ import TechStack from './components/TechStack';
 import FAQ from './components/FAQ';
 import Legal from './components/Legal';
 import ScrollToTop from './components/ScrollToTop';
-import CookieBanner from './components/CookieBanner'; // <--- IMPORTACIÓN AÑADIDA
+import CookieBanner from './components/CookieBanner';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 const Home = () => (
   <>
@@ -25,11 +27,12 @@ const Home = () => (
 );
 
 function App() {
+  const { t } = useTranslation();
+
   return (
     <Router>
       <ScrollToTop />
 
-      {/* TOASTER ACTUALIZADO */}
       <Toaster
         position="top-right"
         toastOptions={{
@@ -57,13 +60,14 @@ function App() {
             URI<span className="text-blue-500 italic">ROIG</span>
           </Link>
 
-          <div className="flex items-center gap-8 text-[10px] font-cormorant uppercase tracking-[0.2em]">
-            <Link to="/" className="hidden md:block text-gray-500 hover:text-white transition-colors">Inicio</Link>
+          <div className="flex items-center gap-6 text-[10px] font-cormorant uppercase tracking-[0.2em]">
+            <Link to="/" className="hidden md:block text-gray-500 hover:text-white transition-colors">{t('nav.home')}</Link>
+            <LanguageSwitcher />
             <Link
               to="/contacto"
               className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95"
             >
-              Pedir Presupuesto
+              {t('nav.budget')}
             </Link>
           </div>
         </nav>
@@ -80,23 +84,23 @@ function App() {
           <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-cormorant uppercase tracking-[0.2em] text-gray-600">
             <div className="text-left">
               <p className="text-xl font-bold tracking-tighter text-white">URI<span className="text-blue-500">ROIG</span></p>
-              <p className="mt-2 tracking-widest text-[9px]">Soluciones digitales de alto rendimiento.</p>
+              <p className="mt-2 tracking-widest text-[9px]">{t('footer.tagline')}</p>
             </div>
 
             <div className="flex gap-8">
-              <Link to="/" className="hover:text-white transition-colors">Inicio</Link>
-              <Link to="/contacto" className="hover:text-white transition-colors">Contacto</Link>
-              <Link to="/aviso-legal" className="hover:text-white transition-colors">Legal</Link>
+              <Link to="/" className="hover:text-white transition-colors">{t('footer.home')}</Link>
+              <Link to="/contacto" className="hover:text-white transition-colors">{t('footer.contact')}</Link>
+              <Link to="/aviso-legal" className="hover:text-white transition-colors">{t('footer.legal')}</Link>
             </div>
 
             <p className="text-gray-800 text-[9px] tracking-[0.3em]">
-              © {new Date().getFullYear()} MATADEPERA, BCN.
+              © {new Date().getFullYear()} {t('footer.location')}
             </p>
           </div>
         </footer>
       </div>
 
-      <CookieBanner /> {/* <--- BANNER INTEGRADO AQUÍ */}
+      <CookieBanner />
     </Router>
   );
 }

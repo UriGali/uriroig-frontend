@@ -1,45 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-
-const projects = [
-  {
-    title: 'Heretat Vallès | Real Estate VIP',
-    category: 'Desarrollo Web & Lead Gen',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',
-    desc: 'Diseño de plataforma inmobiliaria de lujo. Implementación de embudos de captación para leads de alto valor y estética minimalista de alto rendimiento.',
-    link: 'https://heretat-valles-dsb4qvbm6-urigalis-projects.vercel.app'
-  },
-  {
-    title: 'Chronos | Luxury Store',
-    category: 'E-commerce & UX Design',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
-    desc: 'Tienda online boutique optimizada para máxima velocidad de carga. Estructura enfocada a la conversión y experiencia de usuario premium en retail.',
-    link: 'https://chronos-luxury-store.vercel.app'
-  },
-  {
-    title: 'MediPulse AI | Health SaaS',
-    category: 'Automatización IA & n8n',
-    image: '/mediplus.png',
-    desc: 'Infraestructura inteligente con IA para gestión médica. Automatización de flujos de trabajo con n8n para optimizar procesos operativos críticos.',
-    link: 'https://medipulse-ai-saas.vercel.app'
-  },
-  {
-    title: 'Party Animal | E-commerce Brand',
-    category: 'Brand Experience & Direct Sales',
-    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop',
-    desc: 'Lanzamiento de marca disruptiva con sistemas de venta directa. Estrategia digital enfocada en escalabilidad y alto impacto visual para marcas modernas.',
-    link: 'https://party-animal-store.vercel.app'
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 const ProjectGallery = () => {
+  const { t } = useTranslation();
+
+  const projects = [
+    {
+      title: 'Heretat Vallès | Real Estate VIP',
+      category: t('projects.realestate_category'),
+      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',
+      desc: t('projects.realestate_desc'),
+      link: 'https://heretat-valles-dsb4qvbm6-urigalis-projects.vercel.app'
+    },
+    {
+      title: 'Chronos | Luxury Store',
+      category: t('projects.chronos_category'),
+      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+      desc: t('projects.chronos_desc'),
+      link: 'https://chronos-luxury-store.vercel.app'
+    },
+    {
+      title: 'MediPulse AI | Health SaaS',
+      category: t('projects.medipulse_category'),
+      image: '/mediplus.png',
+      desc: t('projects.medipulse_desc'),
+      link: 'https://medipulse-ai-saas.vercel.app'
+    },
+    {
+      title: 'Party Animal | E-commerce Brand',
+      category: t('projects.party_category'),
+      image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop',
+      desc: t('projects.party_desc'),
+      link: 'https://party-animal-store.vercel.app'
+    }
+  ];
+
   return (
     <section id="work" className="py-24 bg-black px-6">
       <div className="max-w-6xl mx-auto">
         <div className="mb-16">
-          <h2 className="text-4xl font-bold text-white mb-2 italic">Portfolio de Soluciones</h2>
-          <p className="text-gray-400 font-mono text-sm uppercase tracking-widest">Sistemas reales desplegados en producción.</p>
+          <h2 className="text-4xl font-bold text-white mb-2 italic">{t('projects.heading')}</h2>
+          <p className="text-gray-400 font-mono text-sm uppercase tracking-widest">{t('projects.tagline')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -69,7 +72,7 @@ const ProjectGallery = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest hover:text-blue-400 transition-colors group/link"
                 >
-                  Ver Proyecto Live
+                  {t('projects.view_live')}
                   <ExternalLink className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
                 </a>
               </div>

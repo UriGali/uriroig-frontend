@@ -1,31 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Globe, BrainCircuit, Megaphone } from 'lucide-react';
-
-const services = [
-  {
-    title: 'Creación de Webs de Élite',
-    desc: 'Diseño minimalista y funcional. Landing pages y plataformas escalables construidas con React y FastAPI para una velocidad máxima y conversión total.',
-    icon: <Globe className="w-12 h-12 text-gold-500" />
-  },
-  {
-    title: 'Automatización con IA',
-    desc: 'Optimizamos tu tiempo integrando inteligencia artificial: desde agentes de atención al cliente 24/7 hasta procesos que se ejecutan solos.',
-    icon: <BrainCircuit className="w-12 h-12 text-emerald-500" />
-  },
-  {
-    title: 'Estrategia de Growth & Ads',
-    desc: 'No solo creamos tu web, la hacemos rentable. Campañas en Facebook Ads e Instagram diseñadas para captar leads y escalar tu facturación.',
-    icon: <Megaphone className="w-12 h-12 text-orange-500" />
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 const ServiceCards = () => {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      title: t('services.web_title'),
+      desc: t('services.web_desc'),
+      icon: <Globe className="w-12 h-12 text-gold-500" />
+    },
+    {
+      title: t('services.ai_title'),
+      desc: t('services.ai_desc'),
+      icon: <BrainCircuit className="w-12 h-12 text-emerald-500" />
+    },
+    {
+      title: t('services.growth_title'),
+      desc: t('services.growth_desc'),
+      icon: <Megaphone className="w-12 h-12 text-orange-500" />
+    }
+  ];
+
   return (
     <section id="services" className="py-32 bg-black px-6">
       <div className="max-w-6xl mx-auto text-center mb-20">
-        <h2 className="text-4xl font-cinzel md:text-5xl font-cinzel font-bold text-white mb-4 italic">Servicios High-End</h2>
-        <p className="text-gray-500 max-w-2xl mx-auto italic">Soluciones tecnológicas diseñadas para negocios que buscan el siguiente nivel.</p>
+        <h2 className="text-4xl font-cinzel md:text-5xl font-cinzel font-bold text-white mb-4 italic">{t('services.heading')}</h2>
+        <p className="text-gray-500 max-w-2xl mx-auto italic">{t('services.tagline')}</p>
         <div className="h-1 w-24 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mt-6 rounded-full" />
       </div>
 

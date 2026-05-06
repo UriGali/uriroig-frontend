@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Home",
+    "budget": "Get a Quote"
+  },
+  "footer": {
+    "tagline": "High-performance digital solutions.",
+    "home": "Home",
+    "contact": "Contact",
+    "legal": "Legal",
+    "location": "MATADEPERA, BCN."
+  },
+  "hero": {
+    "subtitle": "Web Development & Intelligent Automation",
+    "desc_pre": "We transform ideas into ",
+    "highlight": "flawless",
+    "desc_post": " digital experiences. Specialist in modern architectures and AI-driven process optimization.",
+    "cta_budget": "Get a Quote",
+    "cta_projects": "View Projects"
+  },
+  "techstack": {
+    "heading": "Cutting-Edge Technologies"
+  },
+  "services": {
+    "heading": "High-End Services",
+    "tagline": "Technology solutions designed for businesses seeking the next level.",
+    "web_title": "Elite Web Development",
+    "web_desc": "Minimalist and functional design. Scalable landing pages and platforms built with React and FastAPI for maximum speed and total conversion.",
+    "ai_title": "AI Automation",
+    "ai_desc": "We optimize your time by integrating artificial intelligence: from 24/7 customer service agents to processes that run themselves.",
+    "growth_title": "Growth & Ads Strategy",
+    "growth_desc": "We don't just build your website, we make it profitable. Facebook Ads and Instagram campaigns designed to capture leads and scale your revenue."
+  },
+  "projects": {
+    "heading": "Solutions Portfolio",
+    "tagline": "Real systems deployed in production.",
+    "view_live": "View Live Project",
+    "realestate_category": "Web Development & Lead Gen",
+    "realestate_desc": "Luxury real estate platform design. Implementation of high-value lead capture funnels with minimalist, high-performance aesthetics.",
+    "chronos_category": "E-commerce & UX Design",
+    "chronos_desc": "Boutique online store optimized for maximum load speed. Structure focused on conversion and premium user experience in retail.",
+    "medipulse_category": "AI Automation & n8n",
+    "medipulse_desc": "Intelligent AI infrastructure for medical management. Workflow automation with n8n to optimize critical operational processes.",
+    "party_category": "Brand Experience & Direct Sales",
+    "party_desc": "Disruptive brand launch with direct sales systems. Digital strategy focused on scalability and high visual impact for modern brands."
+  },
+  "methodology": {
+    "heading": "My Methodology",
+    "tagline": "A transparent process designed to achieve exceptional results in every project.",
+    "step1_title": "1. Consulting",
+    "step1_desc": "We talk about your goals, ideal audience, and the features needed for your business.",
+    "step2_title": "2. Development",
+    "step2_desc": "I build the solution using the most modern stack (React, FastAPI, n8n) focused on speed.",
+    "step3_title": "3. Review",
+    "step3_desc": "We test every detail together to ensure the result exceeds your initial expectations.",
+    "step4_title": "4. Delivery",
+    "step4_desc": "We deploy the project and I guide you through the launch so everything runs perfectly.",
+    "cta_heading": "Shall we talk about your project?",
+    "cta_desc": "Every solution is unique. Let's analyze your needs to offer you a personalized, no-commitment proposal.",
+    "cta_button": "Request a personalized proposal"
+  },
+  "contact": {
+    "ai_label": "AI Consulting",
+    "name_placeholder": "Your name",
+    "email_placeholder": "Your email",
+    "interest_label": "Area of interest",
+    "message_placeholder": "Your message...",
+    "service_web_title": "Elite Web",
+    "service_web_desc": "Pro digital impact",
+    "service_ai_title": "AI & Automations",
+    "service_ai_desc": "Optimize and save",
+    "service_growth_title": "Growth & Ads",
+    "service_growth_desc": "Scale your sales",
+    "service_full_title": "Full Business",
+    "service_full_desc": "360° Strategy",
+    "sending": "Syncing...",
+    "submit": "Send Request",
+    "privacy_text": "By submitting this form, you confirm that you have read and accept our",
+    "privacy_link": "Privacy Policy",
+    "success": "Systems activated, {{name}}! Check your inbox; we've sent you the analysis protocol.",
+    "error": "Connection error. Please check the server."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "q1": "How long does it take to have a website ready?",
+    "a1": "Usually between 2 and 4 weeks, depending on complexity and whether you already have the texts and materials ready.",
+    "q2": "Why do you use n8n for automations?",
+    "a2": "Because it allows connecting hundreds of applications visually and quickly, which reduces maintenance costs for you.",
+    "q3": "Do I have to pay monthly maintenance?",
+    "a3": "It's not mandatory. Once I deliver the project it's 100% yours, but I offer optional plans so you don't have to worry about updates."
+  },
+  "cookies": {
+    "text": "Technical infrastructure: We use cookies for the AI Agent's operation and system security.",
+    "accept": "Accept Protocol"
+  },
+  "legal": {
+    "heading": "Legal Information",
+    "section1_title": "01. Site Ownership",
+    "section1_body": "In compliance with Law 34/2002 (LSSI-CE), it is reported that the person responsible for this site is:",
+    "identity_label": "Identity",
+    "identity_value": "URI ROIG (Digital Ecosystems Agency)",
+    "dni_label": "ID/Tax Number",
+    "location_label": "Location",
+    "location_value": "Matadepera, Barcelona.",
+    "section2_title": "02. Privacy Policy (GDPR)",
+    "section2_intro": "Data collected through the contact form and the AI agent (Typebot) is processed under the legal basis of the data subject's consent.",
+    "purpose_label": "Purpose",
+    "purpose_value": "Handling inquiries, preparing automation budgets, and professional communication.",
+    "storage_label": "Storage",
+    "storage_value": "Data is processed through n8n and stored on secure servers (Railway) and private databases.",
+    "rights_label": "Rights",
+    "rights_value": "You can request access, correction, or deletion of your data by writing to uriroigg@gmail.com.",
+    "section3_title": "03. Cookie Policy",
+    "section3_body": "This website uses technical cookies necessary for the execution of the AI Agent and the correct functioning of the form. By browsing this site, you accept the use of these technical infrastructure tools. We do not use third-party advertising tracking cookies.",
+    "section4_title": "04. Intellectual Property",
+    "section4_body": "All content, design, and automation algorithms displayed are the property of URI ROIG. Total or partial reproduction without express authorization is prohibited."
+  }
+}

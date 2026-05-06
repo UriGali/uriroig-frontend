@@ -1,29 +1,22 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
-
-const questions = [
-    {
-        q: "¿Cuánto tiempo tarda en estar lista una web?",
-        a: "Normalmente entre 2 y 4 semanas, dependiendo de la complejidad y de si ya tienes los textos y materiales listos."
-    },
-    {
-        q: "¿Por qué usas n8n para las automatizaciones?",
-        a: "Porque permite conectar cientos de aplicaciones de forma visual y rápida, lo que reduce costes de mantenimiento para ti."
-    },
-    {
-        q: "¿Tengo que pagar mantenimiento mensual?",
-        a: "No es obligatorio. Una vez entrego el proyecto es tuyo al 100%, pero ofrezco planes opcionales para que no tengas que preocuparte de actualizaciones."
-    }
-];
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
+    const { t } = useTranslation();
     const [active, setActive] = useState(null);
+
+    const questions = [
+        { q: t('faq.q1'), a: t('faq.a1') },
+        { q: t('faq.q2'), a: t('faq.a2') },
+        { q: t('faq.q3'), a: t('faq.a3') },
+    ];
 
     return (
         <section className="py-32 bg-black px-6">
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl font-cinzel font-bold text-white mb-12 italic text-center">Preguntas Frecuentes</h2>
+                <h2 className="text-3xl font-cinzel font-bold text-white mb-12 italic text-center">{t('faq.heading')}</h2>
                 <div className="space-y-4">
                     {questions.map((item, i) => (
                         <div key={i} className="border border-white/10 rounded-2xl overflow-hidden">
