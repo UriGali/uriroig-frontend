@@ -33,12 +33,12 @@ const Hero = () => {
           >
             {t('hero.cta_budget')}
           </Link>
-          <a
-            href="#work"
+          <Link
+            to="/proyectos"
             className="border border-white/10 px-10 py-4 rounded-full font-semibold hover:bg-white/5 transition-colors"
           >
             {t('hero.cta_projects')}
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>
