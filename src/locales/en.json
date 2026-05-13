@@ -1,11 +1,13 @@
 {
   "nav": {
     "home": "Home",
+    "projects": "Projects",
     "budget": "Get a Quote"
   },
   "footer": {
     "tagline": "High-performance digital solutions.",
     "home": "Home",
+    "projects": "Projects",
     "contact": "Contact",
     "legal": "Legal",
     "location": "MATADEPERA, BCN."
@@ -39,10 +41,10 @@
     "realestate_desc": "Luxury real estate platform design. Implementation of high-value lead capture funnels with minimalist, high-performance aesthetics.",
     "chronos_category": "E-commerce & UX Design",
     "chronos_desc": "Boutique online store optimized for maximum load speed. Structure focused on conversion and premium user experience in retail.",
-    "medipulse_category": "AI Automation & n8n",
-    "medipulse_desc": "Intelligent AI infrastructure for medical management. Workflow automation with n8n to optimize critical operational processes.",
-    "party_category": "Brand Experience & Direct Sales",
-    "party_desc": "Disruptive brand launch with direct sales systems. Digital strategy focused on scalability and high visual impact for modern brands."
+    "plastindustrial_category": "Industrial Corporate Web",
+    "plastindustrial_desc": "Design and development of a corporate website for an industrial plastics manufacturing company. SEO optimization, maximum performance and high-impact professional aesthetics.",
+    "bhcbevents_category": "Tournament & Registration",
+    "bhcbevents_desc": "Official website for the beach hockey tournament. Event info, categories, regulations and online registration system for participating teams."
   },
   "methodology": {
     "heading": "My Methodology",

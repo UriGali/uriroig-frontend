@@ -1,11 +1,13 @@
 {
   "nav": {
     "home": "Inicio",
+    "projects": "Proyectos",
     "budget": "Pedir Presupuesto"
   },
   "footer": {
     "tagline": "Soluciones digitales de alto rendimiento.",
     "home": "Inicio",
+    "projects": "Proyectos",
     "contact": "Contacto",
     "legal": "Legal",
     "location": "MATADEPERA, BCN."
@@ -39,10 +41,10 @@
     "realestate_desc": "Diseño de plataforma inmobiliaria de lujo. Implementación de embudos de captación para leads de alto valor y estética minimalista de alto rendimiento.",
     "chronos_category": "E-commerce & UX Design",
     "chronos_desc": "Tienda online boutique optimizada para máxima velocidad de carga. Estructura enfocada a la conversión y experiencia de usuario premium en retail.",
-    "medipulse_category": "Automatización IA & n8n",
-    "medipulse_desc": "Infraestructura inteligente con IA para gestión médica. Automatización de flujos de trabajo con n8n para optimizar procesos operativos críticos.",
-    "party_category": "Brand Experience & Direct Sales",
-    "party_desc": "Lanzamiento de marca disruptiva con sistemas de venta directa. Estrategia digital enfocada en escalabilidad y alto impacto visual para marcas modernas."
+    "plastindustrial_category": "Web Corporativa Industrial",
+    "plastindustrial_desc": "Diseño y desarrollo de web corporativa para empresa industrial de fabricación de plásticos. Optimización SEO, rendimiento máximo y estética profesional de alto impacto.",
+    "bhcbevents_category": "Torneo & Inscripciones",
+    "bhcbevents_desc": "Web oficial del torneo de hockey playa. Información del evento, categorías, reglamento y sistema de inscripción online para equipos participantes."
   },
   "methodology": {
     "heading": "Mi Metodología",

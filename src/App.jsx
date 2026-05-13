@@ -20,10 +20,15 @@ const Home = () => (
     <Hero />
     <TechStack />
     <ServiceCards />
-    <ProjectGallery />
     <Methodology />
     <FAQ />
   </>
+);
+
+const Projects = () => (
+  <div className="pt-32 pb-20">
+    <ProjectGallery />
+  </div>
 );
 
 function App() {
@@ -62,6 +67,7 @@ function App() {
 
           <div className="flex items-center gap-6 text-[10px] font-cormorant uppercase tracking-[0.2em]">
             <Link to="/" className="hidden md:block text-gray-500 hover:text-white transition-colors">{t('nav.home')}</Link>
+            <Link to="/proyectos" className="hidden md:block text-gray-500 hover:text-white transition-colors">{t('nav.projects')}</Link>
             <LanguageSwitcher />
             <Link
               to="/contacto"
@@ -75,6 +81,7 @@ function App() {
         {/* RUTAS */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/proyectos" element={<Projects />} />
           <Route path="/contacto" element={<div className="pt-32 pb-20"><ContactForm /></div>} />
           <Route path="/aviso-legal" element={<div className="pt-32 pb-20"><Legal /></div>} />
         </Routes>
@@ -89,6 +96,7 @@ function App() {
 
             <div className="flex gap-8">
               <Link to="/" className="hover:text-white transition-colors">{t('footer.home')}</Link>
+              <Link to="/proyectos" className="hover:text-white transition-colors">{t('footer.projects')}</Link>
               <Link to="/contacto" className="hover:text-white transition-colors">{t('footer.contact')}</Link>
               <Link to="/aviso-legal" className="hover:text-white transition-colors">{t('footer.legal')}</Link>
             </div>

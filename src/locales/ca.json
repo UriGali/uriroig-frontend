@@ -1,11 +1,13 @@
 {
   "nav": {
     "home": "Inici",
+    "projects": "Projectes",
     "budget": "Demanar Pressupost"
   },
   "footer": {
     "tagline": "Solucions digitals d'alt rendiment.",
     "home": "Inici",
+    "projects": "Projectes",
     "contact": "Contacte",
     "legal": "Legal",
     "location": "MATADEPERA, BCN."
@@ -39,10 +41,10 @@
     "realestate_desc": "Disseny de plataforma immobiliària de luxe. Implementació d'embuts de captació per a leads d'alt valor i estètica minimalista d'alt rendiment.",
     "chronos_category": "E-commerce & UX Design",
     "chronos_desc": "Botiga online boutique optimitzada per a màxima velocitat de càrrega. Estructura enfocada a la conversió i experiència d'usuari premium al retail.",
-    "medipulse_category": "Automatització IA & n8n",
-    "medipulse_desc": "Infraestructura intel·ligent amb IA per a gestió mèdica. Automatització de fluxos de treball amb n8n per optimitzar processos operatius crítics.",
-    "party_category": "Brand Experience & Direct Sales",
-    "party_desc": "Llançament de marca disruptiva amb sistemes de venda directa. Estratègia digital enfocada en escalabilitat i alt impacte visual per a marques modernes."
+    "plastindustrial_category": "Web Corporativa Industrial",
+    "plastindustrial_desc": "Disseny i desenvolupament de web corporativa per a empresa industrial de fabricació de plàstics. Optimització SEO, rendiment màxim i estètica professional d'alt impacte.",
+    "bhcbevents_category": "Torneig & Inscripcions",
+    "bhcbevents_desc": "Web oficial del torneig d'hoquei platja. Informació de l'esdeveniment, categories, reglament i sistema d'inscripció online per a equips participants."
   },
   "methodology": {
     "heading": "La Meva Metodologia",
